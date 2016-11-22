@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAula4.Page1">
+  <StackLayout>
+    <Label Text="Curso Xamarin - Wincomp"
+           VerticalOptions="Start"
+           HorizontalTextAlignment="Center"
+           FontSize="Large"
+           FontAttributes="Bold"
+           TextColor="Red"
+         />
+    <Entry x:Name="txtCurso" TextColor="Blue" BackgroundColor="Silver"></Entry>
+    <Button x:Name="cmdIniciar" Text="Iniciar" Clicked="OnClick"></Button>
+    <Label x:Name="lblStatus" Text="Curso Pausado" TextColor="Yellow"></Label>
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAula4.Page2">
+  <StackLayout>
+    <Label Text="Curso Xamarin - Wincomp"
+           VerticalOptions="Start"
+           HorizontalTextAlignment="Center"
+           FontSize="Large"
+           FontAttributes="Bold"
+           TextColor="Red"
+         />
+
+    <Grid HorizontalOptions="Start">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="auto"/>
+        <RowDefinition Height="auto"/>
+        <RowDefinition Height="auto"/>
+        <RowDefinition Height="auto"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="2*"/>
+      </Grid.ColumnDefinitions>
+      
+      <Label Text="Nome:" Grid.Row="0" Grid.Column="0" HorizontalOptions="End"/>
+      <Entry x:Name="txtNome" Text="" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" BackgroundColor="Silver" WidthRequest="200"/>
+      <Label Text="Empresa:" Grid.Row="1" Grid.Column="0" HorizontalOptions="End"/>
+      <Entry x:Name="txtEmpresa" Text="" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" BackgroundColor="Silver" WidthRequest="200"/>
+      <Button x:Name="cmdIncluir" Text="Incuir" Clicked="OnClick" Grid.Row="3" Grid.ColumnSpan="2" Grid.Column="0" HorizontalOptions="Center"></Button>
+      <Label x:Name="lblStatus" Text="Status: " Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0" HorizontalOptions="Center"/>
+    </Grid>
+    
+  </StackLayout>
+</ContentPage>
